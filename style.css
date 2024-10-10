@@ -121,6 +121,7 @@ button:hover {
     }
 
     .calculator {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -143,6 +144,7 @@ button:hover {
     }
 
     .result-wrapper {
+        display: grid;
         width: 100%;
         grid-template-columns: 1fr;
     }
