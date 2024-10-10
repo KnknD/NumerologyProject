@@ -120,6 +120,10 @@ button:hover {
         text-wrap: pretty;
     }
 
+    button {
+    margin: 0 auto;
+    }
+
     .calculator {
         width: 100%;
         display: flex;
