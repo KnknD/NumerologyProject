@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <script src="./script.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>&#10024;Узнайте ваши числа&#10024;</h1>
+        <form action="./" class="calculator">
+            <div class="date-wrapper">
+                <label for="DD" class="aside">Введите дату:</label>
+                <input type="number" name="DD" id="DD" class="calculator-input" max="31" min="1" placeholder="DD">
+            </div>
+            <div class="month-wrapper">
+                <label for="DD" class="aside">Введите месяц:</label>
+                <input type="number" name="MM" id="MM" class="calculator-input" max="12" min="1" placeholder="MM">
+            </div>
+            <div class="year-wrapper">
+                <label for="DD" class="aside">Введите год:</label>
+                <input type="number" name="YY" id="YY" class="calculator-input" max="2024" min="1500" placeholder="YY">
+            </div>
+            <button class="button">Рассчитать</button>
+        </form>
+        <div class="result-wrapper">
+            <div class="result-wrapper__life-number">
+                <h2>Число жизни: <span class="life-number"></span></h2>
+                <h3 class="title life-number-title"></h3>
+                <p class="description life-number-description"></p>
+            </div>
+            <div class="result-wrapper__full-number">
+                <h2>Число пути: <span class="full-number"></span></h2>
+                <h3 class="title full-number-title"></h3>
+                <p class="description full-number-description"></p>
+            </div>
+            <div class="result-wrapper__ass-number">
+                <h2>Число жопы: <span class="ass-number"></span></h2>
+                <h3 class="title ass-number-title"></h3>
+                <p class="description ass-number-description"></p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
