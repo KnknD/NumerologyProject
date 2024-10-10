@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-wrap: pretty;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -20,7 +21,11 @@ input[type=number]::-webkit-outer-spin-button {
     --cc-result: rgb(119, 0, 255);
 }
 
-h1, h2 {
+h1 {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
     margin-top: 50px;
 }
@@ -44,10 +49,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    padding: 50px 0;
 }
 
 .container {
-    width: 80%; 
+    width: 80%;
     margin: 0 auto;   
 }
 
@@ -106,4 +112,38 @@ button:hover {
     line-height: 1;
     font-weight: 200;
     color: rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 28px;
+        text-wrap: pretty;
+    }
+
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        gap: 14px;
+    }
+
+    .date-wrapper *,
+    .month-wrapper *,
+    .year-wrapper * {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .aside {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .result-wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 }
